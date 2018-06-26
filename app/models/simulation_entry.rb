@@ -1,0 +1,2 @@
+class SimulationEntry < ApplicationRecord
+end

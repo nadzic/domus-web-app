@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2018_06_26_125929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "simulation_entries", force: :cascade do |t|
+    t.time "time"
+    t.decimal "position_x"
+    t.decimal "position_y"
+    t.decimal "position_z"
+    t.decimal "rotation_x"
+    t.decimal "rotation_y"
+    t.decimal "rotation_z"
+    t.decimal "rotation_w"
+    t.float "speed"
+    t.decimal "steering_wheel_position"
+    t.decimal "gas_pedal_position"
+    t.decimal "brake_pedal_position"
+    t.boolean "engine_running"
+    t.integer "simulation_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2018-06-26 14:59:29
+  position_x: 9.99
+  position_y: 9.99
+  position_z: 9.99
+  rotation_x: 9.99
+  rotation_y: 9.99
+  rotation_z: 9.99
+  rotation_w: 9.99
+  speed: 1.5
+  steering_wheel_position: 9.99
+  gas_pedal_position: 9.99
+  brake_pedal_position: 9.99
+  engine_running: false
+  simulation_id: 1
+
+two:
+  time: 2018-06-26 14:59:29
+  position_x: 9.99
+  position_y: 9.99
+  position_z: 9.99
+  rotation_x: 9.99
+  rotation_y: 9.99
+  rotation_z: 9.99
+  rotation_w: 9.99
+  speed: 1.5
+  steering_wheel_position: 9.99
+  gas_pedal_position: 9.99
+  brake_pedal_position: 9.99
+  engine_running: false
+  simulation_id: 1
