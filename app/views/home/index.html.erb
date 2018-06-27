@@ -18,6 +18,14 @@
     </table>
 
 
-    <%= column_chart [["Nsm Og Milk", 28], ["Og Bananas", 19], ["Rr Cheese Pizza", 19], ["Casa Solar Tmprn", 10], ["Og Carrots", 9], ["Olive Bar", 8], ["Atlas Blkbry", 8], ["Mixed Greens Og", 7], ["Tangerine 3 Lb", 7], ["De Lallo Pasta", 7]] %>
+    <%= line_chart [["Nsm Og Milk", 28], ["Og Bananas", 19], ["Rr Cheese Pizza", 19], ["Casa Solar Tmprn", 10], ["Og Carrots", 9], ["Olive Bar", 8], ["Atlas Blkbry", 8], ["Mixed Greens Og", 7], ["Tangerine 3 Lb", 7], ["De Lallo Pasta", 7]],
+      title: "Top Ten Products (By Total Quantity Purchased)",
+      colors: ['brown'],
+      library: {
+        tooltip: {
+          pointFormat: 'Times Bought: <b>{point.y}</b>'
+        }
+      }
+    %>
   </div>
 </header>
