@@ -1,21 +1,23 @@
 <!-- Header -->
 <header class="masthead bg-primary text-white text-center">
   <div class="container">
-  <h1>Listing simulation entries</h1>
-  
-  <table>
-    <tr>
-      <th>Gas Pedal Position</th>
-      <th>Brake Pedal Position</th>
-    </tr>
-  
-    <% @simulation_entries.each do |simulation_entry| %>
+    <h1>Listing simulation entries</h1>
+    
+    <table>
       <tr>
-        <td><%= simulation_entry.gas_pedal_position %></td>
-        <td><%= simulation_entry.brake_pedal_position %></td>
+        <th>Gas Pedal Position</th>
+        <th>Brake Pedal Position</th>
       </tr>
-    <% end %>
-  </table>
-</div>
+    
+      <% @simulation_entries.each do |simulation_entry| %>
+        <tr>
+          <td><%= simulation_entry.gas_pedal_position %></td>
+          <td><%= simulation_entry.brake_pedal_position %></td>
+        </tr>
+      <% end %>
+    </table>
+
+
+    <%= column_chart [["Nsm Og Milk", 28], ["Og Bananas", 19], ["Rr Cheese Pizza", 19], ["Casa Solar Tmprn", 10], ["Og Carrots", 9], ["Olive Bar", 8], ["Atlas Blkbry", 8], ["Mixed Greens Og", 7], ["Tangerine 3 Lb", 7], ["De Lallo Pasta", 7]] %>
   </div>
 </header>
