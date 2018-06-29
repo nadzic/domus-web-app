@@ -1,6 +1,6 @@
 ## Overview
 
-Domus App is ruby on rails application, which analyzes data from car driving simulator and suggests the driver how to drive the electric car to optmize the battery consumption.
+Domus App is ruby on rails application, which analyzes data from car driving simulator and suggests the driver how to drive the electric car to optimize the battery consumption.
 
 ## Stack we are using
 - Ruby
@@ -40,7 +40,7 @@ rails -h
 ```
 ## Database design
 
-
+For the d
 
 
 
