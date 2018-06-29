@@ -1,24 +1,61 @@
-# README
+## Overview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Domus App is ruby on rails application, which analyzes data from car driving simulator and suggests the driver how to drive the electric car to optmize the battery consumption.
 
-Things you may want to cover:
+## Stack we are using
+- Ruby
+- Rails 5.2.0
+- PostgreSQL
 
-* Ruby version
+## Installation
 
-* System dependencies
+### db
 
-* Configuration
+We use postgreSQL: https://www.postgresql.org/download/
 
-* Database creation
+### rails app
 
-* Database initialization
+Clone project and do the following:
 
-* How to run the test suite
+```
+cd domusapp
+bundle install
+rake db:create
+rake db:migrate
+```
+After you install 
 
-* Services (job queues, cache servers, search engines, etc.)
+### Plugins to install (VSCode)
 
-* Deployment instructions
+- Ruby
 
-* ...
+## Running app
+```
+rails s
+```
+## Help
+
+```
+rails -h
+```
+## Database design
+
+
+
+
+
+## Systems
+
+Information about our systems.
+
+### Staging
+* Backend:
+  * URL: /
+  * Deploys: /
+  * Hosted: /
+
+### Production
+* Backend:
+  * URL: /
+  * Deploys: /
+  * Hosted: /
