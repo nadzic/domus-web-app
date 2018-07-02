@@ -40,9 +40,7 @@ rails -h
 ```
 ## Database design
 
-For the d
-
-
+![database model](https://raw.githubusercontent.com/nadzic/domusapp/master/app/assets/images/db-model.png)
 
 ## Systems
 
