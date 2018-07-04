@@ -14,7 +14,7 @@ class CreateSimulationEntries < ActiveRecord::Migration[5.2]
       t.decimal :gas_pedal_position
       t.decimal :brake_pedal_position
       t.boolean :engine_running
-      t.integer :simulation_id
+      t.references :simulation, foreign_key: true
 
       t.timestamps
     end
