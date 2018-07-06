@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
+  root 'static_pages#panel'
+  get 'sessions/new'
   get 'analysis/index'
   get 'coach/index'
   get 'instructions/index'
   get 'overview/index'
   get 'static_pages/panel'
-  
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  # root 'application#hello'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 
-  # resources :main
-
-  root 'static_pages#panel'
+  resources :drivers
 end

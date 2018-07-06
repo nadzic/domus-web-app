@@ -1,7 +1,8 @@
 class OverviewController < ApplicationController
     def index
         @simulation_entries = SimulationEntry.all
-        read_file()
+        #read_file()
+        #puts @simulation_entries
     end
 
     def read_file

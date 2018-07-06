@@ -1,7 +1,7 @@
 class CreateDrivers < ActiveRecord::Migration[5.2]
   def change
     create_table :drivers do |t|
-      t.text :driver_name
+      t.string :driver_name
 
       t.timestamps
     end
