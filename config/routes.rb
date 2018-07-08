@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static_pages#panel'
+  root 'sessions#new'
   get 'sessions/new'
   get 'analysis/index'
   get 'coach/index'
