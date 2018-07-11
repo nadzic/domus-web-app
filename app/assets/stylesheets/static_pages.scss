@@ -1,3 +1,11 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.panel {
+    .new-drive, .log-books, .couch {
+        border: 1px solid black;
+        max-width: 200px;
+        text-align: center;
+        padding: 20px;
+    }
+}

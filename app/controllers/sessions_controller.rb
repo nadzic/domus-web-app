@@ -9,10 +9,7 @@ class SessionsController < ApplicationController
     if driver && driver.authenticate(params[:session][:password])
       log_in driver
       redirect_to static_pages_panel_url
-      # code comes here
-      puts "ok auth"
     else
-      puts "not ok auth"
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
     end  

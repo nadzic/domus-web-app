@@ -1,3 +1,7 @@
-<%= link_to 'New Drive', instructions_index_path %>
-<%=  link_to "Log Books", controller: "overview", action: "index" %>
-<%= link_to 'Couch', coach_index_path %>
+
+
+<div class="d-flex flex-column panel align-items-center">
+  <%= link_to 'New Drive', instructions_index_path, :class => 'new-drive' %>
+  <%= link_to "Log Books", { controller: "overview", action: "index" } , :class => 'log-books mt-3' %>
+  <%= link_to 'Couch', coach_index_path, :class => 'couch mt-3' %>
+</div>
