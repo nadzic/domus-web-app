@@ -6,4 +6,4 @@ phases:
       - bundle install
   build:
     commands:
-      - testing if it works
+      - echo "testing if it works"
