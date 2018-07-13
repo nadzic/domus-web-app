@@ -1,0 +1,9 @@
+version: 0.1
+   
+phases:
+  install:
+    commands:
+      - bundle install
+  build:
+    commands:
+      - testing if it works
