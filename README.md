@@ -23,7 +23,7 @@ bundle install
 rake db:create
 rake db:migrate
 ```
-After you install 
+After you install
 
 ### Plugins to install (VSCode)
 
@@ -40,7 +40,7 @@ rails -h
 ```
 ## Database design
 
-![database model](https://raw.githubusercontent.com/nadzic/domusapp/master/app/assets/images/db-model.png)
+![database model](https://raw.githubusercontent.com/nadzic/domusapp/master/app/assets/images/er-diagram.png)
 
 ## Systems
 
