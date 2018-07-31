@@ -47,13 +47,13 @@ rails -h
 Information about our systems.
 
 ### Staging
-* Backend:
-  * URL: /
-  * Deploys: /
-  * Hosted: /
+* Info:
+  * URL: http://domus-staging.eu-central-1.elasticbeanstalk.com/
+  * Deploys: Continuous deployment on develop branch with CodeDeploy
+  * Hosted: AWS Elastic Beanstalk
 
 ### Production
-* Backend:
+* Info:
   * URL: /
   * Deploys: /
   * Hosted: /
