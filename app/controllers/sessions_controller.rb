@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
 
   def create 
     driver = Driver.find_by(driver_name: params[:session][:driver_name])
+    puts "Driverrr ------------------------------------------------------"
     puts driver
     if driver && driver.authenticate(params[:session][:password])
       log_in driver

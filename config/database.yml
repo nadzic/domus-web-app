@@ -12,15 +12,25 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
+
+# local databse
 development:
   adapter: postgresql
   encoding: unicode
   database: domusapp_development
   pool: 5
-  host: pginstance.cd5ynnwwrrtm.eu-central-1.rds.amazonaws.com
-  port: 5432
   username: postgres
-  password: d0musd4t4
+  password:
+
+#development:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: domusapp_development
+#  pool: 5
+#  host: pginstance.cd5ynnwwrrtm.eu-central-1.rds.amazonaws.com
+#  port: 5432
+#  username: postgres
+#  password: d0musd4t4
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
