@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2018_07_06_114151) do
   end
 
   create_table "simulation_entries", force: :cascade do |t|
-    t.time "time"
+    t.integer "time"
     t.decimal "position_x"
     t.decimal "position_y"
     t.decimal "position_z"

@@ -1,7 +1,7 @@
 class CreateSimulationEntries < ActiveRecord::Migration[5.2]
   def change
     create_table :simulation_entries do |t|
-      t.time :time
+      t.integer :time
       t.decimal :position_x
       t.decimal :position_y
       t.decimal :position_z

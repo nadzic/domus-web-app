@@ -1,4 +1,4 @@
-Driving Task: assets/DrivingTasks/Projects/BigCity/bigCity.xml
+Driving Task: assets/DrivingTasks/Projects/BigCity/BigCity.xml
 Date-Time: 2018_06_18-15_32_15
 Driver: TestDriver
 Used Format = Time (ms): Position (x,y,z) : Rotation (x,y,z,w) : Speed (km/h) : Steering Wheel Position [-1,1] : Gas Pedal Position : Brake Pedal Position : Engine Running
@@ -14,4 +14,3 @@ Used Format = Time (ms): Position (x,y,z) : Rotation (x,y,z,w) : Speed (km/h) : 
 1529328735891:1482.984:0.26:1295.996:9.0E-4:0.5736:-7.0E-4:0.8192:0.58:-0.00701:1.0:0.0:true
 1529328735963:1482.968:0.26:1295.99:0.001:0.5735:-7.0E-4:0.8192:1.15:-0.00701:1.0:0.0:true
 1529328735996:1482.949:0.26:1295.983:0.001:0.5735:-7.0E-4:0.8192:1.62:-0.00701:1.0:0.0:true
- 
