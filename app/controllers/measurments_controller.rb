@@ -10,11 +10,10 @@ class MeasurmentsController < ApplicationController
   def create
     @measurment = Measurment.new(measurment_params)
 
-    fill_db(@measurment.attachment.read)
-
-    puts @measurment.attachment.read
-
     if @measurment.save
+        puts "test printing"
+        puts @measurment.id
+        fill_db(@measurment.attachment.read, @measurment.id)
         redirect_to measurments_path, notice: "The measurment #{@measurment.name} has been uploaded."
     else
         render "new"

@@ -21,7 +21,7 @@ module MeasurmentsHelper
         end
     end
 
-    def fill_db(data)
+    def fill_db(data, measurment_id)
         data.each_line.with_index do |line, index|
             # Map
             if index == 0
@@ -34,7 +34,7 @@ module MeasurmentsHelper
                 save_driver(@driver_name, @driver_name)
                 @driver_id = get_driver_id(@driver_name)
             elsif index == 3
-                @simulation = Simulation.create(driver_id: @driver_id, map_id: @map_id)
+                @simulation = Simulation.create(driver_id: @driver_id, map_id: @map_id, measurment_id: measurment_id)
             elsif index > 3
                 array = line.split(':')
                 array.each_with_index do |entry, j|
