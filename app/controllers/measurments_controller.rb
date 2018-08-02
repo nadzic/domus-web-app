@@ -10,6 +10,8 @@ class MeasurmentsController < ApplicationController
   def create
     @measurment = Measurment.new(measurment_params)
 
+    fill_db(@measurment.attachment.read)
+
     puts @measurment.attachment.read
 
     if @measurment.save
