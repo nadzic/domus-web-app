@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_02_072211) do
+ActiveRecord::Schema.define(version: 2018_07_06_114151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,13 +58,16 @@ ActiveRecord::Schema.define(version: 2018_08_02_072211) do
   create_table "simulations", force: :cascade do |t|
     t.bigint "driver_id"
     t.bigint "map_id"
+    t.bigint "measurment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["driver_id"], name: "index_simulations_on_driver_id"
     t.index ["map_id"], name: "index_simulations_on_map_id"
+    t.index ["measurment_id"], name: "index_simulations_on_measurment_id"
   end
 
   add_foreign_key "simulation_entries", "simulations"
   add_foreign_key "simulations", "drivers"
   add_foreign_key "simulations", "maps"
+  add_foreign_key "simulations", "measurments"
 end
