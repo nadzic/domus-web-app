@@ -1,0 +1,2 @@
+Device ID	Device Name
+8b4db9f666a84c00cb225ba33748ca68a2d2e1bf	Nik iPhone X
