@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'measurments/index'
+  get 'measurments/new'
+  get 'measurments/create'
+  get 'measurments/destroy'
   root 'sessions#new'
   get 'sessions/new'
   get 'analysis/index'
@@ -12,4 +16,5 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   resources :drivers
+  resources :measurments, only: [:index, :new, :create, :destroy]
 end
