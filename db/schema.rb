@@ -28,8 +28,15 @@ ActiveRecord::Schema.define(version: 2018_07_06_114151) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "measurments", force: :cascade do |t|
+    t.string "name"
+    t.string "attachment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "simulation_entries", force: :cascade do |t|
-    t.time "time"
+    t.integer "time"
     t.decimal "position_x"
     t.decimal "position_y"
     t.decimal "position_z"
@@ -51,13 +58,16 @@ ActiveRecord::Schema.define(version: 2018_07_06_114151) do
   create_table "simulations", force: :cascade do |t|
     t.bigint "driver_id"
     t.bigint "map_id"
+    t.bigint "measurment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["driver_id"], name: "index_simulations_on_driver_id"
     t.index ["map_id"], name: "index_simulations_on_map_id"
+    t.index ["measurment_id"], name: "index_simulations_on_measurment_id"
   end
 
   add_foreign_key "simulation_entries", "simulations"
   add_foreign_key "simulations", "drivers"
   add_foreign_key "simulations", "maps"
+  add_foreign_key "simulations", "measurments"
 end

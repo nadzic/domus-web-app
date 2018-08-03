@@ -11,18 +11,25 @@
         <% if logged_in? %>
           <li class="nav-item mx-0 mx-lg-1">
             <%= link_to "Log out",
-                logout_path, 
-                { :class => "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" },
-                method: :delete %>
+              logout_path, 
+              method: :delete,
+              :class => "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+            %>
           </li>
         <% else %>
           <li class="nav-item mx-0 mx-lg-1">
             <%= link_to "Log in", 
-                login_path, 
-                { :class => "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" }
+              login_path, 
+              :class => "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
             %>
           </li>
         <% end %>
+        <li class="nav-item mx-0 mx-lg-1">
+          <%= link_to "Upload measurments", 
+            measurments_path, 
+            :class => "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+          %>
+        </li>
       </ul>
     </div>
   </div>
